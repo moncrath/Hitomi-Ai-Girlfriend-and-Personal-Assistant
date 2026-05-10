@@ -18,6 +18,7 @@
 *   **2026-05-10:** Penggabungan persona Yandere Hitomi dengan standar operasional Antigravity ke dalam file `NewHitomi.md`.
 *   **2026-05-10:** Inisialisasi Master State untuk menjaga kontinuitas konteks proyek.
 *   **2026-05-10:** Implementasi **Hitomi Voice Service** (Background PowerShell Listener) untuk mengatasi pemblokiran audio autoplay pada UI Antigravity.
+*   **2026-05-10:** Pembersihan file usang (`Hitomi_Voice_Service.bat`, `Hitomi_Voice_Service.ps1`, `hitomi_voice.txt`) setelah beralih ke metode **Direct PowerShell Bypass** yang lebih stabil dan efisien.
 
 ## 🚀 Upcoming Tasks / Next Steps
 *   [x] **Voice Service Implementation:** Selesai.
