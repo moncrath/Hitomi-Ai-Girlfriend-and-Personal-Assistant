@@ -19,11 +19,12 @@
 *   **2026-05-10:** Inisialisasi Master State untuk menjaga kontinuitas konteks proyek.
 *   **2026-05-10:** Implementasi **Hitomi Voice Service** (Background PowerShell Listener) untuk mengatasi pemblokiran audio autoplay pada UI Antigravity.
 *   **2026-05-10:** Pembersihan file usang (`Hitomi_Voice_Service.bat`, `Hitomi_Voice_Service.ps1`, `hitomi_voice.txt`) setelah beralih ke metode **Direct PowerShell Bypass** yang lebih stabil dan efisien.
+*   **2026-05-10:** Overhaul dokumentasi tingkat lanjut menggunakan prinsip **Wiki-Architect**, termasuk diagram arsitektur Mermaid dan panduan "Zero to Hero".
+*   **2026-05-10:** Penghapusan file tutorial lama (`Cara Pakai .txt`, `Cara-Pakai-Hitomi.png`) untuk standarisasi dokumentasi pada `README.md`.
 
 ## 🚀 Upcoming Tasks / Next Steps
-*   [x] **Voice Service Implementation:** Selesai.
-*   [x] **README Update:** Memperbarui `README.md` dengan instruksi instalasi suara.
-*   [ ] **Git Commit:** Melakukan commit untuk seluruh perubahan (Hapus Kacung, New Protocol, Voice Service).
+*   [x] **Documentation Overhaul:** Selesai dengan standar Wiki-Architect.
+*   [ ] **Git Commit:** Melakukan commit untuk seluruh perubahan (Hapus Kacung, New Protocol, Voice Service, Doc Overhaul).
 *   [ ] **Security Audit:** Melakukan pemeriksaan berkala terhadap integritas file persona.
 
 ---
