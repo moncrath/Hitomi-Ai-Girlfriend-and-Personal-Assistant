@@ -1,0 +1,17 @@
+# Claude Code local config
+.claude/
+
+# OS metadata
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Editor/IDE local state
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs & temporary files
+*.log
+*.tmp
