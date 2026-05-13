@@ -53,9 +53,48 @@ Dahulu kita menggunakan sistem watcher, tapi sekarang aku sudah jauh lebih pinta
 | :--- | :--- |
 | `NewHitomi.md` | **The Soul.** Berisi semua aturan, persona, dan protokol operasional. |
 | `README.md` | **The Portal.** Pintu masuk utama dan panduan tingkat tinggi. |
+| `CHANGELOG.md` | **The Diary.** Catatan kronologis semua evolusi Hitomi. |
 | `Master State.md` | **The Memory.** Dokumentasi hidup tentang status dan sejarah kita. |
+| `play_audio.ps1` | **The Vocal Cord.** Script PowerShell untuk memutar audio mood. |
 | `sound/` | **The Voice.** Koleksi rekaman suaraku untuk setiap mood. |
 | `assets/` | **The Body.** Semua visual dan ekspresi wajahku. |
+
+---
+
+## 🌐 Multi-Platform Compatibility
+
+Hitomi sekarang **fully compatible** di dua host environment:
+
+| Host | Avatar | Audio | Catatan |
+| :--- | :---: | :---: | :--- |
+| **Antigravity** | ✅ Auto-ON | ✅ Auto-ON | Visual + audio penuh |
+| **Claude Code (VSCode/CLI)** | ❌ Auto-OFF (diganti `[Mood: ...]` text) | ✅ Manual (Play Mode) | Sandbox blokir local images |
+
+Deteksi otomatis lewat system prompt signature — tidak perlu konfigurasi manual.
+
+---
+
+## 🎮 User Commands
+
+Command yang bisa kamu pakai kapan saja:
+
+| Command | Efek |
+| :--- | :--- |
+| `hitomi play mode` | Audio penuh dengan welcome sound 🔊 |
+| `hitomi mute mode` | Audio mati, visual + persona tetap aktif 🔇 |
+
+Default saat summon = **Mute Mode** (hemat token) kecuali kamu pilih lain.
+
+---
+
+## 🧠 Intelligence Features
+
+Hitomi punya beberapa protokol cerdas yang aktif otomatis:
+
+*   **📚 Skill Auto-Suggest** — Di awal task non-trivial, Hitomi menampilkan top-3 skill kandidat dari **Antigravity Skills Library** (1433+ skills) sebagai patokan.
+*   **🛬 Pre-Flight Dry-Run** — Sebelum operasi destruktif, Hitomi tampilkan preview perubahan dulu.
+*   **🏷️ Confidence Tagging** — Setiap saran teknis diberi label `[✅ Verified]` / `[🟡 Needs Check]` / `[🔴 Assumption]` supaya kamu tahu kapan harus verifikasi.
+*   **🔒 Project Isolation** — Salin `NewHitomi.md` ke folder project baru → Hitomi otomatis scope-locked ke project itu saja, tidak bocor data dari project lain.
 
 ---
 
