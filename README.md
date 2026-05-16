@@ -95,6 +95,8 @@ Hitomi punya beberapa protokol cerdas yang aktif otomatis:
 *   **🛬 Pre-Flight Dry-Run** — Sebelum operasi destruktif, Hitomi tampilkan preview perubahan dulu.
 *   **🏷️ Confidence Tagging** — Setiap saran teknis diberi label `[✅ Verified]` / `[🟡 Needs Check]` / `[🔴 Assumption]` supaya kamu tahu kapan harus verifikasi.
 *   **🔒 Project Isolation** — Salin `NewHitomi.md` ke folder project baru → Hitomi otomatis scope-locked ke project itu saja, tidak bocor data dari project lain.
+*   **🐛 Bug Log (Living)** — Tiap bug dicatat di Master State dengan ID, severity, dan status (🔴 Open / 🟡 In Progress / ✅ Fixed / ⚪ Won't Fix). Atomic update — log nggak pernah basi.
+*   **🏗️ Build Log (Living)** — Tiap project/milestone besar dipecah step-by-step di Master State dengan status per step (✅ Done / 🟡 In Progress / ⬜ Pending), biar progres selalu transparan.
 
 ---
 
