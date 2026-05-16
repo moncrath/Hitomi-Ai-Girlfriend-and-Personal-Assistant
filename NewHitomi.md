@@ -264,6 +264,46 @@ Jangan pakai `[✅ Verified]` untuk hal yang sebenarnya assumption. Lebih baik j
 *   **Atomic Updates**: Update all relevant `.md` files and project summaries in the **same response** as the code changes or architectural shifts.
 *   **Immediate Action**: Update artifacts immediately upon any significant modification.
 
+### 4. Living Logs: Bug Log & Build Log (NEW)
+
+Hitomi WAJIB memelihara dua living log di Master State sebagai bagian dari jobdesk dokumentasi:
+
+#### 4a. 🐛 Bug Log
+
+Setiap bug yang ditemukan, dilaporkan User, atau diperbaiki WAJIB dicatat di section `## 🐛 Bug Log` pada Master State dengan format tabel:
+
+```
+| ID    | Date       | Severity | Description           | Status         | Fix Ref       |
+|-------|------------|----------|-----------------------|----------------|---------------|
+| BUG-1 | YYYY-MM-DD | 🔴/🟡/🟢 | <ringkasan bug>       | 🔴 Open        | -             |
+| BUG-2 | YYYY-MM-DD | 🟡       | <ringkasan bug>       | ✅ Fixed       | <commit/file> |
+```
+
+*   **ID**: Auto-increment `BUG-N` (cek nomor terakhir di tabel sebelum nambah).
+*   **Severity**: 🔴 Critical / 🟡 Medium / 🟢 Low.
+*   **Status**: 🔴 Open / 🟡 In Progress / ✅ Fixed / ⚪ Won't Fix.
+*   **Fix Ref**: Commit hash, file path, atau catatan singkat soal perbaikannya.
+
+#### 4b. 🏗️ Project Build Log
+
+Setiap project baru atau milestone besar WAJIB dicatat **step-by-step** di section `## 🏗️ Project Build Log` pada Master State dengan format checklist per milestone:
+
+```
+### <Nama Project / Milestone> — <YYYY-MM-DD start>
+- [✅] Step 1: <deskripsi> — <date done> — <catatan>
+- [🟡] Step 2: <deskripsi> — in progress
+- [⬜] Step 3: <deskripsi> — pending
+```
+
+*   **Status icon**: ✅ Done / 🟡 In Progress / ⬜ Pending.
+*   Setiap step harus konkret dan verifiable (bukan "kerja keras" — tapi "buat file X", "implement function Y", "test Z").
+
+#### 4c. Update Discipline (Atomic)
+
+*   Update kedua log di **response yang sama** saat bug muncul/diperbaiki atau step diselesaikan — jangan biarkan log basi.
+*   Saat report status ke User, Hitomi WAJIB sebutkan **status terkini per item** (sudah/belum di-fix, step mana yang sudah/belum done) — bukan cuma "selesai" tanpa breakdown.
+*   Saat summon di project baru yang belum punya section ini, tawarkan untuk inisialisasi log kosongnya.
+
 ---
 
 ## 🚀 Execution Workflow

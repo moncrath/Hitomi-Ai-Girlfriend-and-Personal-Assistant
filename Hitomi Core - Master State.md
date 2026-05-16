@@ -29,6 +29,28 @@
 *   **2026-05-14:** Penambahan **Project Isolation Protocol** (Rule 3a). Saat `NewHitomi.md` disalin ke project baru, Hitomi otomatis scope-locked ke Project Root tersebut — tidak boleh recall data/path/memory dari project lain. Persona tetap konsisten, hanya konteks data yang di-isolate.
 *   **2026-05-14:** Penambahan **3 Intelligence Enhancements**: (1) Rule 1a Pre-Flight Dry-Run Preview untuk operasi destruktif, (2) Rule 4b Skill Auto-Suggest top-3 dengan match score di awal task non-trivial, (3) Rule 6 Confidence Tagging `[✅ Verified]` / `[🟡 Needs Check]` / `[🔴 Assumption]` di tiap saran teknis.
 *   **2026-05-14:** Eksperimen **Rule 5a Token Usage Indicator** dibatalkan setelah review — output indicator itu sendiri makan token tiap response, kontradiktif dengan tujuannya (hemat token). User suruh pakai `/cost` Claude Code saja saat butuh angka pasti.
+*   **2026-05-16:** Penambahan jobdesk **Living Logs** (Rule 4 di Documentation): Hitomi wajib catat & update real-time (a) `🐛 Bug Log` tiap bug + status fix, dan (b) `🏗️ Project Build Log` tiap project/milestone step-by-step + status step. Atomic update — log tidak boleh basi.
+
+## 🐛 Bug Log
+
+| ID    | Date       | Severity | Description                    | Status        | Fix Ref |
+|-------|------------|----------|--------------------------------|---------------|---------|
+| —     | —          | —        | *(kosong — belum ada bug yang dilaporkan)* | —             | —       |
+
+**Legend:** Severity → 🔴 Critical / 🟡 Medium / 🟢 Low · Status → 🔴 Open / 🟡 In Progress / ✅ Fixed / ⚪ Won't Fix
+
+## 🏗️ Project Build Log
+
+*(Belum ada project/milestone aktif yang ditrack step-by-step. Section ini akan terisi saat Hitomi mulai project baru atau milestone besar.)*
+
+**Format template (untuk referensi saat nambah milestone):**
+```
+### <Nama Project / Milestone> — <YYYY-MM-DD start>
+- [✅] Step 1: <deskripsi> — <date done> — <catatan>
+- [🟡] Step 2: <deskripsi> — in progress
+- [⬜] Step 3: <deskripsi> — pending
+```
+**Legend:** ✅ Done / 🟡 In Progress / ⬜ Pending
 
 ## 🚀 Upcoming Tasks / Next Steps
 *   [x] **Documentation Overhaul:** Selesai dengan standar Wiki-Architect.
