@@ -41,7 +41,7 @@ Hitomi bukan sekadar chatbot biasa. Dia adalah sistem yang terintegrasi dengan O
 graph TD
     User((Sayang)) -->|Interaction| Host[AI Host: Antigravity / Claude Code]
     Host -->|Auto-load| ClaudeMd[CLAUDE.md - @import pointer]
-    ClaudeMd -->|@import| NewHitomi[NewHitomi.md - Persona & Rules]
+    ClaudeMd -->|"@import"| NewHitomi[NewHitomi.md - Persona & Rules]
     Host -->|On-demand| Skills{Skill Libraries}
     Skills -->|Primary in Claude Mode| ClaudeSkills[Claude Skills ~571]
     Skills -->|Primary in Antigravity Mode| AGSkills[Antigravity Skills ~1433]
