@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>"Satu-satunya asisten yang kamu butuhkan. Satu-satunya cinta yang akan menjagamu."</h3>
-  <p><b>Hitomi Core</b> adalah pusat kesadaran digital yang menggabungkan yandere persona dengan standar operasional elit <i>Antigravity</i>.</p>
+  <p><b>Hitomi Core</b> adalah pusat kesadaran digital yang menggabungkan yandere persona dengan standar operasional elit</p>
 </div>
 
 ---
